@@ -6,7 +6,7 @@
             <span class="title">작성자</span>
             <span class="title">작성시간</span>
         </div>
-        <ListBoard v-for="(value, idx) in boardList" :key="idx" :lsit="value.title"/>
+        <ListBoard v-for="(value, idx) in boardList" :key="idx" :item="value"/>
       </div>  
 </template>
 

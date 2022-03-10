@@ -1,6 +1,9 @@
 <template>
         <div>
-            <span class="list">{{list}}</span>
+            <span class="list">{{item._id}}</span>
+            <span class="list">{{item.title}}</span>
+            <span class="list">{{item.author}}</span>
+            <span class="list">{{item.createdAt}}</span>
         </div>
 </template>
 
@@ -8,8 +11,8 @@
 export default {
   name: 'ListBoard',
   props: {
-      list: {
-          type: String
+      item: {
+          type: Object
       }
   },
 }
